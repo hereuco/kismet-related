@@ -20,6 +20,7 @@ If {FILENAME} is Kismet-20190401-00-00-01.kismet_homeaccesspoints_list_to_bulk_u
 
 curl -s -H "Content-Type: application/json" -XPOST http://elasticsearch:9200/_bulk --data-binary @Kismet-20190401-00-00-01.kismet_homeaccesspoints_list_to_bulk_upload.json
 
+# Creating Elasticsearch index and mappings
 To take advantage of the time fields in kismet logs for use in Elasticsearch and Kibana, the Elasticsearch indexs must have the correct mappings for the corresponding time fields. These basic python scripts should help in understanding how to prepopulate Elasticsearch.
 
 * create_homeaccesspoints_index_and_mappings.py
